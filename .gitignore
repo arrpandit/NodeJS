@@ -1,5 +1,2 @@
-/Angular
-/deco.txt
-/Node
-/pre01
-/restapi
+node_modules
+package-lock.json
