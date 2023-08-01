@@ -14,11 +14,12 @@ mongooseConnection("mongodb://127.0.0.1:27017/learning")
 
 
 //middleware
-// app.use(logReqRes("log.txt"))
+app.use(logReqRes("log.txt"))
 app.use(express.json({extends:false}))
 
 
 //route
 app.use('/app/user',userRouter)
 
+//server
 app.listen(PORT,()=>console.log(`server running on ${PORT}`))
